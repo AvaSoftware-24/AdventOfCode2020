@@ -2,6 +2,7 @@ use std::env;
 
 mod utils;
 mod day_1;
+mod day_2;
 
 use crate::utils::load_inputs::load_day;
 
@@ -12,6 +13,7 @@ fn main() {
 
     match args[1].as_str(){
     "1"=>day_1::solve(&input),
+    "2"=>day_2::solve(&input),
     &_ => println!("please enter a valid day")
     }
 }
